@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <nav>
       <a href="/" class="logo">β𝐀ᵏ𝑒ｍ𝑒</a>
@@ -28,18 +29,321 @@
             <i class="fa-solid fa-xmark closeBtn"></i>
           </span>
         </div>
-        <i class="fa-solid fa-bars menuToggle"></i>
-      </div>
-      <div class="searchBox">
-        <input type="text" placeholder="search here..." />
       </div>
     </nav>
-    <header>
-        <img src="images/banner.jpeg" alt="Banner image" />
-    </header>
+    <main class="main">
+      <section class="slider">
+        <div class="slide">
+          <img src="images/banner1.jpeg" alt="banner1" />
+        </div>
+        <div class="slide">
+          <img src="images/banner2.jpg" alt="banner2" />
+        </div>
+        <div class="slide">
+          <img src="images/banner3.jpg" alt="banner3" />
+        </div>
+        <div class="slide">
+          <img src="images/banner4.jpg" alt="banner4" />
+        </div>
+
+        <button class="btn_slide prev">
+          <i class="fas fa-3x fa-chevron-circle-left"></i>
+        </button>
+        <button class="btn_slide next">
+          <i class="fas fa-3x fa-chevron-circle-right"></i>
+        </button>
+
+        <div class="dots_container">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+          <span class="dot" data-slide="3"></span>
+        </div>
+      </section>
+
+      <section class="bestseller_container">
+        <h1 class="bestseller_title">
+          Shop By <span> Bestseller Categories </span>
+        </h1>
+        <div class="bestseller_body">
+          <article class="bestseller_article">
+            <figure>
+              <img src="images/bestsellerCat1.png" alt="" />
+            </figure>
+            <div class="bestseller_body_content">
+              <h2>Birthday Surprises</h2>
+              <a
+                href="/Product-listing.html"
+                target="_blank"
+                class="view_all_btn"
+                >View all</a
+              >
+            </div>
+          </article>
+          <article class="bestseller_article">
+            <figure>
+              <img src="images/bestsellerCat2.png" alt="bestseller category" />
+            </figure>
+            <div class="bestseller_body_content">
+              <h2>Anniversary Surprises</h2>
+              <a
+                href="/Product-listing.html"
+                target="_blank"
+                class="view_all_btn"
+                >View all</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- * shop by category -->
+      <!--* cake container -->
+      <section class="cake_container">
+        <article class="cake_container1">
+          <h2>Shop By <span class="span_underline_effect"> Cake </span></h2>
+          <a href="/Product-listing.html" class="view_all_btn">View all</a>
+        </article>
+        <article class="cake_container2">
+          <div class="cake_container2_content">
+            <div class="cake_container2_content_data">
+              <figure class="cake_container2_content_data_figure">
+                <img src="images/cake/cake1.jpg" alt="cake image" />
+                <a href="/Product-listing.html" class="card_effect">View</a>
+              </figure>
+              <h4>TALL AND FANCY</h4>
+            </div>
+          </div>
+          <div class="cake_container2_content">
+            <div class="cake_container2_content_data">
+              <figure class="cake_container2_content_data_figure">
+                <img src="images/cake/cake2.jpg" alt="cake image" />
+                <a href="/Product-listing.html" class="card_effect">View</a>
+              </figure>
+              <h4>EXOTIC CAKES</h4>
+            </div>
+          </div>
+          <div class="cake_container2_content">
+            <div class="cake_container2_content_data">
+              <figure class="cake_container2_content_data_figure">
+                <img src="images/cake/cake3.jpg" alt="cake image" />
+                <a href="/Product-listing.html" class="card_effect">View</a>
+              </figure>
+              <h4>PREMIUM CAKES</h4>
+            </div>
+          </div>
+          <div class="cake_container2_content">
+            <div class="cake_container2_content_data">
+              <figure class="cake_container2_content_data_figure">
+                <img src="images/cake/cake4.jpg" alt="cake image" />
+                <a href="/Product-listing.html" class="card_effect">View</a>
+              </figure>
+              <h4>DESIGNER CAKES</h4>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- * 3D cake container -->
+      <section class="cake_container cake_3d_container">
+        <article class="cake_container1">
+          <h2>Shop By <span class="span_underline_effect">3D Cake </span></h2>
+          <a href="/Product-listing.html" class="view_all_btn">View all</a>
+        </article>
+        <article class="cake_container2">
+          <div class="cake_container2_content">
+            <div class="cake_container2_content_data">
+              <figure class="cake_container2_content_data_figure">
+                <img src="images/3d cake/3d_cake1.jpg" alt="cake image" />
+                <a href="/Product-listing.html" class="card_effect">View</a>
+              </figure>
+              <h4>WEDDING CAKES</h4>
+            </div>
+          </div>
+          <div class="cake_container2_content">
+            <div class="cake_container2_content_data">
+              <figure class="cake_container2_content_data_figure">
+                <img src="images/3d cake/3d_cake2.jpg" alt="cake image" />
+                <a href="/Product-listing.html" class="card_effect">View</a>
+              </figure>
+              <h4>PHOTO CAKES</h4>
+            </div>
+          </div>
+          <div class="cake_container2_content">
+            <div class="cake_container2_content_data">
+              <figure class="cake_container2_content_data_figure">
+                <img src="images/3d cake/3d_cake3.jpg" alt="cake image" />
+                <a href="/Product-listing.html" class="card_effect">View</a>
+              </figure>
+              <h4>E-MOTION CAKES</h4>
+            </div>
+          </div>
+          <div class="cake_container2_content">
+            <div class="cake_container2_content_data">
+              <figure class="cake_container2_content_data_figure">
+                <img src="images/3d cake/3d_cake4.jpg" alt="cake image" />
+                <a href="/Product-listing.html" class="card_effect">View</a>
+              </figure>
+              <h4>3D CAKES</h4>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- * Pastry container -->
+      <section class="cake_container pastry_container">
+        <article class="cake_container1">
+          <h2>Shop By <span class="span_underline_effect">Pastry </span></h2>
+          <a href="/Product-listing.html" class="view_all_btn">View all</a>
+        </article>
+        <article class="cake_container2">
+          <div class="cake_container2_content">
+            <div class="cake_container2_content_data">
+              <figure class="cake_container2_content_data_figure">
+                <img src="images/pastry/pastry1.jpg" alt="cake image" />
+                <a href="/Product-listing.html" class="card_effect">View</a>
+              </figure>
+              <h4>FRESH CREAM PASTRIES</h4>
+            </div>
+          </div>
+          <div class="cake_container2_content">
+            <div class="cake_container2_content_data">
+              <figure class="cake_container2_content_data_figure">
+                <img src="images/pastry/pastry2.jpg" alt="cake image" />
+                <a href="/Product-listing.html" class="card_effect">View</a>
+              </figure>
+              <h4>CHOCOLATE PASTRIES</h4>
+            </div>
+          </div>
+          <div class="cake_container2_content">
+            <div class="cake_container2_content_data">
+              <figure class="cake_container2_content_data_figure">
+                <img src="images/pastry/pastry3.jpg" alt="cake image" />
+                <a href="/Product-listing.html" class="card_effect">View</a>
+              </figure>
+              <h4>CUP PASTRIES</h4>
+            </div>
+          </div>
+          <div class="cake_container2_content">
+            <div class="cake_container2_content_data">
+              <figure class="cake_container2_content_data_figure">
+                <img src="images/pastry/pastry4.jpg" alt="cake image" />
+                <a href="/Product-listing.html" class="card_effect">View</a>
+              </figure>
+              <h4>SWISS MISS PASTRY</h4>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- * Savories container -->
+      <section class="cake_container savories_container">
+        <article class="cake_container1">
+          <h2>Shop By <span class="span_underline_effect">Savories </span></h2>
+          <a href="/Product-listing.html" class="view_all_btn">View all</a>
+        </article>
+        <article class="cake_container2">
+          <div class="cake_container2_content">
+            <div class="cake_container2_content_data">
+              <figure class="cake_container2_content_data_figure">
+                <img src="images/savories/savories1.jpg" alt="cake image" />
+                <a href="/Product-listing.html" class="card_effect">View</a>
+              </figure>
+              <h4>BURGERS</h4>
+            </div>
+          </div>
+          <div class="cake_container2_content">
+            <div class="cake_container2_content_data">
+              <figure class="cake_container2_content_data_figure">
+                <img src="images/savories/savories2.jpg" alt="cake image" />
+                <a href="/Product-listing.html" class="card_effect">View</a>
+              </figure>
+              <h4>PIZZA</h4>
+            </div>
+          </div>
+          <div class="cake_container2_content">
+            <div class="cake_container2_content_data">
+              <figure class="cake_container2_content_data_figure">
+                <img src="images/savories/savories3.jpg" alt="cake image" />
+                <a href="/Product-listing.html" class="card_effect">View</a>
+              </figure>
+              <h4>ROLLS</h4>
+            </div>
+          </div>
+          <div class="cake_container2_content">
+            <div class="cake_container2_content_data">
+              <figure class="cake_container2_content_data_figure">
+                <img src="images/savories/savories1.jpg" alt="cake image" />
+                <a href="/Product-listing.html" class="card_effect">View</a>
+              </figure>
+              <h4>PATTIES & PUFFS</h4>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- * chocolates container -->
+      <section class="cake_container chocolates_container">
+        <article class="cake_container1">
+          <h2>
+            Shop By <span class="span_underline_effect">Chocolates </span>
+          </h2>
+          <a href="/Product-listing.html" class="view_all_btn">View all</a>
+        </article>
+        <article class="cake_container2">
+          <div class="cake_container2_content">
+            <div class="cake_container2_content_data">
+              <figure class="cake_container2_content_data_figure">
+                <img src="images/chocolates/chocolates1.jpg" alt="cake image" />
+                <a href="/Product-listing.html" class="card_effect">View</a>
+              </figure>
+              <h4>CHOCOLATE BARS</h4>
+            </div>
+          </div>
+          <div class="cake_container2_content">
+            <div class="cake_container2_content_data">
+              <figure class="cake_container2_content_data_figure">
+                <img src="images/chocolates/chocolates2.jpg" alt="cake image" />
+                <a href="/Product-listing.html" class="card_effect">View</a>
+              </figure>
+              <h4>CHOCOLATE BOUQUETS</h4>
+            </div>
+          </div>
+          <div class="cake_container2_content">
+            <div class="cake_container2_content_data">
+              <figure class="cake_container2_content_data_figure">
+                <img src="images/chocolates/chocolates3.jpg" alt="cake image" />
+                <a href="/Product-listing.html" class="card_effect">View</a>
+              </figure>
+              <h4>ROSE SENSATION BOUQUET</h4>
+            </div>
+          </div>
+          <div class="cake_container2_content">
+            <div class="cake_container2_content_data">
+              <figure class="cake_container2_content_data_figure">
+                <img src="images/chocolates/chocolates4.jpg" alt="cake image" />
+                <a href="/Product-listing.html" class="card_effect">View</a>
+              </figure>
+              <h4>VALENTINE CHOCOLATE BAR</h4>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- * Discount offer -->
+      <section class="discount_offer">
+        <h4>Placing your first order ? Get Upto 40% Off</h4>
+        <h5>Use Code : BakeMe40</h5>
+      </section>
+
+      <div class="customer_service">
+        <a href="/contact-us.html">
+          <i class="fa-solid fa-comments"></i>
+        </a>
+      </div>
+    </main>
     <footer>
       <section class="footer_1">
-        <a href="/" class="logo">β𝐀ᵏ𝑒ｍ𝑒</a>
+        <a href="./index.html" class="logo">β𝐀ᵏ𝑒ｍ𝑒</a>
         <article>
           <h2>Connect with us</h2>
           <div class="socials">
@@ -53,8 +357,8 @@
       <section class="footer_2">
         <article class="footer_links">
           <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="about-us.html">About Us</a></li>
             <li><a href="#">Become Franchise</a></li>
             <li><a href="#">Become Vendor</a></li>
           </ul>
@@ -84,9 +388,7 @@
         </article>
       </section>
       <section class="footer_3">
-        <span>
-          Copyright © BakeMe. All rights reserved
-        </span>
+        <span> Copyright © BakeMe. All rights reserved </span>
         <span>Designed & Developed by <u>QPSIT</u> </span>
       </section>
     </footer>

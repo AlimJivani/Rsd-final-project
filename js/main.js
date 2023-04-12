@@ -1,29 +1,75 @@
-let searchBtn = document.querySelector(".searchBtn");
-let closeBtn = document.querySelector(".closeBtn");
-let searchBox = document.querySelector(".searchBox");
-searchBtn.addEventListener("click", function () {
+// let searchBtn = document.querySelector(".searchBtn");
+// let closeBtn = document.querySelector(".closeBtn");
+// let searchBox = document.querySelector(".searchBox");
+// let nav = document.querySelector("nav");
+// let navigation = document.querySelector(".navigation");
 
-    searchBox.classList.add("active");
-    searchBtn.classList.add("active");
-    closeBtn.classList.add("active");
-    menuToggle.classList.add("hide");
-    nav.classList.remove("open")
-})
-closeBtn.addEventListener("click", function () {
+// searchBtn.addEventListener("click", function () {
 
-    searchBox.classList.remove("active");
-    searchBtn.classList.remove("active");
-    closeBtn.classList.remove("active");
-    menuToggle.classList.remove("hide");
-})
-menuToggle.addEventListener("click", function () {
+//     searchBox.classList.add("active");
+//     searchBtn.classList.add("active");
+//     closeBtn.classList.add("active");
+//     menuToggle.classList.add("hide");
+//     nav.classList.remove("open")
+// })
+// closeBtn.addEventListener("click", function () {
 
-    nav.classList.toggle('open');
-    searchBox.classList.remove("active");
-    closeBtn.classList.remove("active");
-    searchBtn.classList.remove("active");
-})
+//     searchBox.classList.remove("active");
+//     searchBtn.classList.remove("active");
+//     closeBtn.classList.remove("active");
+//     menuToggle.classList.remove("hide");
+// })
+// let menuToggle = document.querySelector(".menuToggle");
+// menuToggle.addEventListener("click", function () {
 
-let nav = document.querySelector("nav");
-let navigation = document.querySelector(".navigation");
-let menuToggle = document.querySelector(".menuToggle");
+//     nav.classList.toggle('open');
+//     searchBox.classList.remove("active");
+//     closeBtn.classList.remove("active");
+//     searchBtn.classList.remove("active");
+// })
+
+function Slider() {
+    const carouselSlides = document.querySelectorAll('.slide');
+    const btnPrev = document.querySelector('.prev');
+    const btnNext = document.querySelector('.next');
+    const dotsSlide = document.querySelector('.dots_container');
+    let currentSlide = 0;
+
+    const activeDot = function (slide) {
+        document.querySelectorAll('.dot').forEach(dot => dot.classList.remove('active'));
+        document.querySelector(`.dot[data-slide="${slide}"]`).classList.add('active');
+    };
+    activeDot(currentSlide);
+
+    const changeSlide = function (slides) {
+        carouselSlides.forEach((slide, index) => (slide.style.transform = `translateX(${100 * (index - slides)}%)`));
+    };
+    changeSlide(currentSlide);
+
+    btnNext.addEventListener('click', function () {
+        currentSlide++;
+        if (carouselSlides.length - 1 < currentSlide) {
+            currentSlide = 0;
+        };
+        changeSlide(currentSlide);
+        activeDot(currentSlide);
+    });
+    btnPrev.addEventListener('click', function () {
+        currentSlide--;
+        if (0 >= currentSlide) {
+            currentSlide = 0;
+        };
+        changeSlide(currentSlide);
+        activeDot(currentSlide);
+    });
+
+    dotsSlide.addEventListener('click', function (e) {
+        if (e.target.classList.contains('dot')) {
+            const slide = e.target.dataset.slide;
+            changeSlide(slide);
+            activeDot(slide);
+        }
+    });
+};
+
+Slider();

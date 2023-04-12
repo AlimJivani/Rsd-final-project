@@ -7,7 +7,6 @@
   box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
-  outline: none;
 }
 body {
   min-height: 100vh;
@@ -132,18 +131,405 @@ nav ul li a:hover::before {
   visibility: hidden;
   right: 5px;
 }
-header img {
+
+/* * Main tag starts */
+.main {
   width: 100%;
-  height: 400px;
+  /* https://dolcino.qodeinteractive.com/wp-content/uploads/2018/11/landing-background-1.jpg */
+  background-image: url("../images/background.jpg");
+
+  background-position: center;
   background-size: cover;
-  background: no-repeat center center;
+  background-attachment: fixed;
+  height: auto;
+  background-repeat: repeat;
 }
+.slider {
+  position: relative;
+  max-width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s;
+}
+.slide > img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+button {
+  background: none;
+  border: none;
+}
+button .fas {
+  border-radius: 50%;
+  color: white;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+.btn_slide {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+.prev {
+  left: 0%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+}
+.next {
+  right: 0%;
+  transform: translate(50%, -50%);
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+}
+.dots_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 15px 5px;
+  border-radius: 0.5rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  border: 2px solid lavender;
+  border-radius: 50%;
+}
+.dot.active {
+  background: lavender;
+}
+.slider:hover .prev {
+  left: 5%;
+  opacity: 1;
+}
+.slider:hover .next {
+  right: 5%;
+  opacity: 1;
+}
+.slider:hover .dots_container {
+  bottom: 10px;
+  opacity: 1;
+}
+
+.bestseller_container {
+  /* background-color: #e2def5; */
+  background-color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+.bestseller_title {
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.bestseller_title span {
+  color: #ec268f;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.bestseller_title span::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: #ec268f;
+  bottom: -5px;
+  left: 0%;
+  transition: 0.3s ease-in-out;
+
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.bestseller_container:hover .bestseller_title span {
+  color: red;
+}
+.bestseller_container:hover .bestseller_title span::before {
+  background-color: red;
+
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.bestseller_body {
+  padding: 20px;
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.bestseller_article {
+  display: flex;
+  padding: 20px 40px;
+  background-color: white;
+  width: 43%;
+  height: fit-content;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease-in-out;
+}
+
+.bestseller_article figure {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+.bestseller_article figure img {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.bestseller_article:hover figure > img {
+  scale: 1.1;
+}
+.bestseller_body_content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: end;
+}
+.bestseller_body_content > h2 {
+  font-size: 20px;
+}
+ .view_all_btn {
+  color: white;
+  background-color: #ec268f;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 2px solid #ec268f;
+  transition: 0.3s ease-in-out;
+}
+.view_all_btn:hover {
+  background-color: white;
+  color: #ec268f;
+}
+
+/* * shop by category */
+.cake_container{
+  width: 100%;
+  height: auto;
+  background-color: #E2DEF5;
+  display: flex;
+  flex-direction: column;gap: 30px;
+  padding: 40px;
+  align-items: center;
+}
+.cake_container1{
+  /* background-color: yellow; */
+  width: 90%;
+  padding:20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+}
+.cake_container1 h2{
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.span_underline_effect{
+  color: #ec268f;
+  position: relative;
+}
+.span_underline_effect::before{
+  position: absolute;
+  transition: .3s ease-in-out;
+  content: "";
+  background-color: #ec268f;
+  left: 0%;
+  bottom: 0px;
+  width: 0%;
+  height: 2px;
+}
+.cake_container:hover .span_underline_effect{
+  color: red;
+}
+.cake_container:hover .span_underline_effect::before{
+  width: 100%;
+  background-color: red;
+}
+.cake_container2{
+  display: flex;
+  width: 90%;
+  padding:20px 30px;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  
+}
+.cake_container2_content{
+  position: relative;
+}
+.card_effect{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-30%) ;
+  border: 2px solid white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  scale: 0;
+  font-weight: 600;
+  transition: .3s ease-in-out;
+  transform-origin: left;
+}
+.cake_container2_content_data_figure:hover .card_effect{
+scale: 1;
+
+}
+.cake_container2_content_data{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  position: relative;
+  width: 220px;
+  height: auto;
+}
+.cake_container2_content_data h4{
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+.cake_container2_content_data_figure{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: blue;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.cake_container2_content_data_figure img{
+  transition: .3s ease-in-out;
+  border-radius: 50%;
+  background-position: center ;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.cake_container2_content_data_figure img:hover{
+  transform: scale(1.1);
+  filter: brightness(.6);
+}
+.card_effect:hover{
+  background-color: #ec268f;
+  border-color: #ec268f;
+}
+.cake_3d_container{
+  background-color: transparent;
+}
+.pastry_container{
+  background-color: #E2DEF5;
+}
+.savories_container{
+  background-color: transparent;
+}
+.chocolates_container{
+  background-color: #E2DEF5;
+}
+
+/** discount offer  */
+.discount_offer {
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-image: url("../images/discount\ offer.png");
+}
+.discount_offer h4,.discount_offer h5{
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+} 
+
+/* * customer service icon */
+.customer_service{
+  position: fixed;
+  z-index: 10;
+  right: 30px;
+  bottom: 30px;
+  background-color: rgb(56, 87, 239);
+  width: 70px;
+  height:70px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+
+.customer_service >a> i{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: .3s ease-in-out;
+  transform: translate(-50%,-50%);
+  font-size: 35px;
+  }
+  .customer_service:hover i{
+    top: 45%;
+  }
+
+/* * Footer */
+
 footer {
   display: flex;
   flex-direction: column;
   gap: 15px;
   justify-content: space-evenly;
   padding: 20px;
+  position: relative;
 }
 .footer_1 {
   display: flex;
@@ -178,6 +564,11 @@ footer {
   padding: 5px;
   border-radius: 4px;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.socials i:hover {
+  scale: 1.1;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
 }
 .facebook {
   background-color: #4d68a1;
