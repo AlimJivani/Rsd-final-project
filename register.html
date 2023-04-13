@@ -6,66 +6,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/register.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/product-detail.css">
     <link rel="stylesheet" href="css/all.min.css" />
-    <script
-      src="https://kit.fontawesome.com/7f041928e2.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="css/register.css">
+    <script src="https://kit.fontawesome.com/7f041928e2.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
-    <nav>
-        <a href="/" class="logo">β𝐀ᵏ𝑒ｍ𝑒</a>
-        <div class="nav_group">
-            <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Our products</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="/register.html">Register</a></li>
-            </ul>
-            <div class="search">
-                <span class="icon">
-                    <i class="fa-solid fa-magnifying-glass searchBtn"></i>
-                    <i class="fa-solid fa-xmark closeBtn"></i>
-                </span>
+    <!-- nav start -->
+    <nav class="navbar">
+        <div class="navbar-container nav-c">
+            <a href="./index.html" class="logo">β𝐀ᵏ𝑒ｍ𝑒</a>
+            <input type="checkbox" />
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
             </div>
-            <i class="fa-solid fa-bars menuToggle"></i>
-        </div>
-        <div class="searchBox">
-            <input type="text" placeholder="search here..." />
+            <div class="search">
+                <input type="search" placeholder="Search BakeMe.com">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <ul class="menu-items">
+                <li><a href="/">Home</a></li>
+                <li><a href="Product-listing.html">Our products</a></li>
+                <li><a href="/about-us.html">About</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./register.html">Register</a></li>
+                <li>
+                    <a href="../profile.html" class="profile_icon">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="../cart.html" class="cart_icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
-    <section class="container">
-        <form>
-            <h1>Register</h1>
+    <!-- nav end -->
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <!-- Register section start -->
+    <main class="main">
+        <section class="container">
+            <form>
+                <h1>Register</h1>
 
-            <label for="phone">Mobile number</label>
-            <input type="number" id="Mobile" name="Mobile" placeholder="Enter your Mobile Number" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="phone">Mobile number</label>
+                <input type="number" id="Mobile" name="Mobile" placeholder="Enter your Mobile Number" required>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-            <label for="confirm_password">Confirm Password</label>
-            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password"
-                required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
 
-            <input type="submit" value="Register">
-        </form>
-    </section>
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password"
+                    required>
 
+                <input type="submit" value="Register" class="submit-button">
+
+                <div class="login-with-third-party-apps">
+                    <a href="#" class="login-button google">
+                        <i class="fa fa-google"></i> <span> Login with Google</span>
+                    </a>
+                    <a href="#" class="login-button facebook">
+                        <i class="fa fa-facebook"></i> Login with Facebook
+                    </a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-- Register section end -->
+
+    <!-- footer start -->
     <footer>
         <section class="footer_1">
-            <a href="/" class="logo">β𝐀ᵏ𝑒ｍ𝑒</a>
+            <a href="./index.html" class="logo">β𝐀ᵏ𝑒ｍ𝑒</a>
             <article>
                 <h2>Connect with us</h2>
                 <div class="socials">
@@ -79,8 +107,8 @@
         <section class="footer_2">
             <article class="footer_links">
                 <ul>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
                     <li><a href="#">Become Franchise</a></li>
                     <li><a href="#">Become Vendor</a></li>
                 </ul>
@@ -110,13 +138,14 @@
             </article>
         </section>
         <section class="footer_3">
-            <span>
-                Copyright © BakeMe. All rights reserved
-            </span>
-            <span>Designed & Developed by <u>QPSIT</u> </span>
+            <span> Copyright © BakeMe. All rights reserved </span>
+            <span>Designed & Developed by <u>Crazy Designer</u> </span>
         </section>
     </footer>
+    <!-- footer end -->
+
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

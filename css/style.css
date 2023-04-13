@@ -21,7 +21,7 @@ Nav css B
   display: none;
 }
 
-.navbar-container.container {
+.navbar-container.nav-c {
   padding: 0 20px;
 }
 
@@ -43,31 +43,31 @@ Nav css B
   align-items: center;
   width: 100%;
 }
-.navbar-container form {
+.search {
   /* background-color: lightblue; */
   display: flex;
   padding: 20px;
   justify-content: space-evenly;
   gap: 5px;
 }
-.navbar-container form input {
+.search input {
   padding: 10px 10px;
   width: 350px;
   outline: none;
   border: 1px solid #333;
   border-radius: 5px;
 }
-.navbar-container form button {
+.search button {
   border: 1px solid #333;
   padding: 0px 10px;
   border-radius: 5px;
   background-color: #ffa6c2;
   transition: 0.3s ease-in-out;
 }
-.navbar-container form button i {
+.search button i {
   font-size: 17px;
 }
-.navbar-container form button:hover {
+.search button:hover {
   background-color: #f29ac9;
 }
 .menu-items {

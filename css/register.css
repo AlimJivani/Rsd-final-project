@@ -46,7 +46,7 @@ input[type="password"] {
     box-shadow: 20px 20px 60px #cedce5, 2px 5px 30px #92c7f6;
 }
 
-input[type="submit"] {
+.submit-button {
     border-radius: 5px;
     display: block;
     margin: 0 auto;
@@ -70,7 +70,7 @@ input[type="text"]:focus {
 
 }
 
-input[type="submit"]:hover {
+.submit-button:hover {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
     animation-name: expand;
     animation-duration: 0.5s;
