@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -13,12 +14,14 @@ form {
     background-color: #f2f2f2;
     padding: 20px;
     border-radius: 10px;
-
+    box-shadow: 20px 20px 60px #C9E4F7, -20px -20px 60px #bbd8f2;
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    font-family: 'Pacifico';
+    font-size: 56px;
 }
 
 label {
@@ -36,16 +39,101 @@ input[type="password"] {
     border: none;
     border-radius: 5px;
     width: 95%;
+    box-shadow: 20px 20px 60px #cedce5, 2px 5px 30px #92c7f6;
 }
 
 input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
     border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #b74cc9;
+    margin-bottom: 10px;
+    background-color: #6c63ff;
+    color: white;
     cursor: pointer;
 }
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+    outline: none;
+    border: 3px solid;
+    border-image: linear-gradient(145deg, #9a40a9, #b74cc9) 1;
+
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    animation-name: expand;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes expand {
+    from {
+        width: 80%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.login-with-third-party-apps {
+    margin: 1em;
+}
+
+.login-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+    box-shadow: 20px 20px 60px #cedce5, 20px 20px 60px #92c7f6;
+
+}
+
+.login-button.google {
+    background-color: #db4437;
+    color: white;
+    margin: 0.2em;
+}
+
+.login-button.facebook {
+    background-color: #3b5998;
+    color: white;
+    margin: 0.4em;
+}
+
+.login-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.login-button i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.login-button.google:hover {
+    background-color: #c72f27;
+}
+
+.login-button.facebook:hover {
+    background-color: #2f477a;
+}
+
 
 @media screen and (max-width: 768px) {
     .container {
