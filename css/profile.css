@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Lobster&family=Montserrat:wght@100;200;400;500;600;700;800&family=Mulish:wght@300;400;600&family=Open+Sans:wght@300;400&family=Poppins:wght@300;400;500;600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 60px #C9E4F7, -20px -20px 60px #96C4EC;
+    border: none;
+}
+
+.profile-image {
+    flex: 1;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.profile-info {
+    flex: 1;
+    text-align: center;
+}
+
+.h1-text {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Pacifico';
+    font-size: 56px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.edit-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(to bottom, #79bff2, #437aab);
+}
+
+.edit-button:hover {
+    transform: scale(1.2);
+    background: linear-gradient(to bottom, #384c5b, #153e61);
+}
+
+@media screen and (min-width: 768px) {
+    .profile {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .profile-image {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .profile-info {
+        text-align: left;
+    }
+}

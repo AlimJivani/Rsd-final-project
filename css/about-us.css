@@ -1,0 +1,505 @@
+/*********************  Default-CSS  *********************/
+
+:root {
+	scroll-behavior: unset;
+	--pink : #d91b81;
+}
+html {
+	-webkit-text-size-adjust: none
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0
+}
+body {
+    overflow-x: hidden;
+    color: #000;
+    background-color: #fff;
+    line-height: 1;
+    font-size: 18px;
+    font-weight: 400;
+	font-family: 'Bitter', serif;
+}
+a,
+span,
+a:hover,
+a:active,
+button {
+	text-decoration: none;
+}
+a,
+div a:hover,
+div a:active,
+div a:focus,
+button {
+	text-decoration: none;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+button:focus {
+	box-shadow: none !important;
+}
+p {
+	margin: 0;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+	margin: 0;
+}
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width: 100%;
+}
+/*********************  Default-CSS  End *********************/
+.container {
+	max-width: 80%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.common_btn {
+	color: #fff;
+	font-weight: 600;
+	background-color: var(--pink);
+	border-radius: 20px;
+	padding: 10px 30px;
+	display: inline-block;
+}
+.common_btn:hover {
+	background-color: #bb0a68;
+}
+header {
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+}
+.header_block {
+	padding: 10px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo a img {
+	max-width: 120px;
+}
+/* Contact Form */
+.contact_form_section {
+	padding: 80px 0 50px;
+}
+.contact_form {
+	max-width: 580px;
+	margin: 0 auto;
+}
+.send_btn {
+	margin-top: 10px;
+}
+.send_btn button {
+	border: unset;
+	outline: unset;
+	cursor: pointer;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 10px 25px;
+}
+.contact_form input,
+.contact_form textarea {
+	background-color: rgb(226 222 244 / 68%);
+	color: #000;
+	border: unset;
+	padding: 15px 20px;
+	font-size: 14px;
+	width: 100%;
+	margin: 10px 0;
+	border-radius: 50px;
+	outline: unset;
+}
+.contact_form textarea {
+	border-radius: 20px;
+	resize: none;
+}
+.input_wrpper {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+.input_wrpper .myinput:first-child {
+	margin-right: 15px;
+}
+.input_wrpper .myinput {
+	width: 100%;
+}
+.section_title h3 {
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+/* Team Section */
+.team_section {
+	padding: 80px 0;
+}
+.team_card {
+    background-color: rgba(255, 255, 255, 0.149);
+    border-radius: 20px;
+    max-width: 330px;
+    margin: 0 10px;
+    transition: all 0.5s;
+    padding: 20px;
+    box-shadow: 0 0 20px 5px #5a595961;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+.team_card_image img {
+    width: 100%;
+    filter: grayscale(1);
+    transition: all 0.5s;
+    height: 250px;
+	object-fit: cover;
+}
+.team_card:hover {
+    background-color: rgba(212, 24, 129, 0.149);
+}
+.team_card:hover .team_card_image img {
+	filter: grayscale(0);
+}
+.team_card_image {
+	margin-bottom: 20px;
+	border-radius: 15px;
+	overflow: hidden;
+}
+.team_card_info p {
+	margin-top: 10px;
+}
+.team_card_info a {
+	margin-top: 20px;
+}
+.team_members_block {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 40px;
+}
+/* Detail banner Section */
+.details_banner_section {
+    padding: 80px 0;
+    background-color: #e2def4;
+    position: relative;
+    overflow: hidden;
+}
+.food {
+	bottom: 10px;
+	left: 47%;
+	transform: translateX(-50%);
+}
+.myfood {
+	font-size: 188px;
+	top: -50px;
+	position: absolute;
+}
+.myfood_bottom {
+	font-size: 150px;
+	bottom: -50px;
+	right: 0;
+	position: absolute;
+}
+.cake {
+	z-index: 5;
+	position: absolute;
+	animation: cake_animation alternate-reverse cubic-bezier(0.4, 0, 1, 1) 5.5s infinite;
+}
+.cake_two {
+	position: absolute;
+	z-index: 1;
+	animation: cake_two_animation alternate-reverse cubic-bezier(0.4, 0, 1, 1) 5.5s infinite;
+}
+.pizza {
+	position: absolute;
+	animation: pizza_animation alternate-reverse cubic-bezier(0.4, 0, 1, 1) 5.5s infinite;
+}
+@keyframes cake_animation {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-10%);
+	}
+}
+@keyframes cake_two_animation {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+@keyframes pizza_animation {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(-10%);
+	}
+}
+.food h3 {
+	font-size: 60px;
+}
+.detail_banner_block {
+	text-align: center;
+}
+.detail_banner_block h2 {
+	font-size: 90px;
+	margin-bottom: 20px;
+}
+.detail_banner_block h3 {
+	font-size: 28px;
+	margin: 0 0 20px;
+}
+.detail_banner_block p {
+	font-size: 20px;
+	max-width: 880px;
+	margin: 0 auto;
+	line-height: 1.4;
+}
+/* Map Section*/
+.map_section {
+	background-color: rgb(181 181 181 / 9%);
+	padding: 80px 0;
+}
+.map_wrapper iframe,
+.map_wrapper {
+	width: 100%;
+}
+.map_wrapper {
+	border-radius: 30px;
+	overflow: hidden;
+	box-shadow: 0 0 35px -16px rgba(0, 0, 0, 0.29);
+}
+/* Footer */
+footer {
+	padding: 50px 0px 0;
+}
+.footer_wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.footer_right {
+	display: flex;
+}
+.footer_cols .logo a {
+	color: #fff;
+	font-size: 38px;
+	font-weight: 800;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.logo a span {
+	color: var(--pink);
+}
+.footer_left .footer_cols {
+	margin: 0;
+}
+.footer_cols {
+	margin: 0 30px;
+}
+.footer_cols h4 {
+	padding-bottom: 15px;
+	color: var(--pink);
+}
+.footer_cols ul li a {
+	color: #000;
+	display: inline-block;
+	padding: 5px 0;
+	font-size: 16px;
+}
+.footer_cols ul li a:hover {
+	color: var(--pink);
+}
+.copyright {
+	border-top: 1px solid #e2def4;
+	margin-top: 40px;
+	text-align: center;
+	background-color: #fff;
+	padding: 20px 15px;
+}
+.copyright a {
+	color: var(--pink);
+}
+/* Responsive Screen */
+@media(max-width:1700px) {
+	.team_card {
+		max-width: 280px;
+		margin-bottom: 20px;
+	}
+}
+@media(max-width:1450px) {
+	.team_card {
+		max-width: 260px;
+	}
+}
+@media(max-width:1199px) {
+	.section_title h3 {
+		font-size: 36px;
+	}
+	.send_btn a {
+		font-size: 16px;
+	}
+	.map_section {
+		padding: 50px 0;
+	}
+	.map_wrapper {
+		max-height: 350px;
+	}
+	.footer_cols .logo a {
+		font-size: 26px;
+	}
+	.footer_cols {
+		margin: 0 20px;
+	}
+	.myfood {
+		font-size: 120px;
+		top: -40px;
+	}
+	.food {
+		left: 43%;
+	}
+	.myfood_bottom {
+		font-size: 120px;
+	}
+}
+@media(max-width:991px) {
+	.team_card {
+		max-width: 45%;
+		padding: 10px;
+		margin: 0 5px 10px;
+	}
+	.team_card_info p {
+		font-size: 14px;
+	}
+	.team_card_info h3{
+		font-size: 16px;
+	}
+	.team_card_info a {
+		font-size: 15px;
+		padding: 7px 20px;
+	}
+	.details_banner_section {
+		padding: 80px 0 90px;
+		margin-bottom: 0px;
+	}
+}
+@media(max-width:767px) {
+	.footer_wrapper {
+		flex-wrap: wrap;
+	}
+	.footer_left {
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.footer_cols p {
+		font-size: 14px;
+	}
+	.map_wrapper {
+		max-height: 270px;
+	}
+	.footer_cols {
+		margin: 0 10px;
+	}	
+	.detail_banner_block p {
+		font-size: 16px;
+	}
+	.detail_banner_block h3 {
+		font-size: 23px;
+	}
+}
+@media(max-width:575px) {
+	.logo a img {
+		max-width: 100px;
+	}
+	.team_section {
+		padding: 50px 0;
+	}
+	.details_banner_section {
+		padding: 30px 0 90px;
+	}
+	.myfood,
+	.myfood_bottom{
+		display: none;
+	}
+	.footer_wrapper {
+		justify-content: center;
+	}
+	.container {
+		max-width: 90%;
+		padding: 0 10px;
+	}
+	.footer_right {
+		text-align: center;
+		flex-wrap: wrap;
+	}
+	.footer_cols {
+		margin: 10px;
+	}
+	.copyright {
+		margin-top: 8px;
+		padding: 13px 15px;
+		font-size: 14px;
+	}
+	.team_card_image img {
+		height: 180px;
+	}
+	.contact_form_section {
+		padding: 50px 0;
+	}
+	.contact_form input,
+	.contact_form textarea {
+		padding: 10px 20px;
+		margin: 7px 0;
+	}
+	.map_wrapper {
+		border-radius: 20px;
+	}
+	.common_btn {
+		padding: 5px 10px;
+		font-size: 16px;
+	}
+	.section_title h3 {
+		font-size: 26px;
+		margin-bottom: 10px;
+	}
+	.header_block .logo a {
+		font-size: 20px;
+	}
+	.header_block {
+		padding: 15px 0px;
+	}
+	.team_members_block {
+		margin-top: 20px;
+	}
+	.food h3 {
+		font-size: 50px;
+	}
+}
+@media(max-width:475px) {
+
+	.team_card{
+		max-width: 100%;
+		padding: 20px;
+	}
+	.input_wrpper {
+		flex-wrap: wrap;
+	}
+	.input_wrpper .myinput:first-child {
+		margin-right: 0;
+	}
+}

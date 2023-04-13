@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Lobster&family=Montserrat:wght@100;200;400;500;600;700;800&family=Mulish:wght@300;400;600&family=Open+Sans:wght@300;400&family=Poppins:wght@300;400;500;600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cake-name {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.cake-details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    box-shadow: 20px 20px 60px #C9E4F7, -20px -20px 60px #96C4EC;
+
+}
+
+.cake-image {
+    max-width: 51em;
+}
+
+.cake-image img {
+    max-width: 100%;
+}
+
+.sub-cake-image img {
+    max-width: 30%;
+    margin: 0;
+    padding: 0;
+}
+
+.cake-description-detail {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+table{
+    margin: 1em;
+}
+
+.table-container th,
+.table-container td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-container th {
+    font-weight: bold;
+}
+
+.add-to-cart {
+    margin-top: 20px;
+}
+
+.add-to-cart button {
+    background: linear-gradient(to bottom, #79bff2, #437aab);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-to-cart button:hover {
+    background-color: #96C4EC;
+}
+
+@media screen and (max-width: 836px) {
+    .cake-details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
