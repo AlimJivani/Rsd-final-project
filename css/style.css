@@ -859,7 +859,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .navbar-container input[type="checkbox"],
   .navbar-container .hamburger-lines {
     display: block;
