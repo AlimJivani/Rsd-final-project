@@ -1,61 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cart</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/cart.css" />
-  <link rel="stylesheet" href="css/all.min.css" />
-  <script src="https://kit.fontawesome.com/7f041928e2.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <!-- Header Start -->
-  <nav class="navbar">
-    <div class="navbar-container nav-c">
-      <a href="./index.html" class="logo">β𝐀ᵏ𝑒ｍ𝑒</a>
-      <input type="checkbox" />
-      <div class="hamburger-lines">
-        <span class="line line1"></span>
-        <span class="line line2"></span>
-        <span class="line line3"></span>
-      </div>
-      <form class="search">
-        <input type="text" placeholder="Search BakeMe.com" />
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-      </form>
-      <ul class="menu-items">
-        <li><a href="/">Home</a></li>
-        <li><a href="Product-listing.html">Our products</a></li>
-        <li><a href="/about-us.html">About</a></li>
-        <li><a href="/contact-us.html">contact-us</a></li>
-        <li><a href="./login.html">Login</a></li>
-        <li><a href="./register.html">Register</a></li>
-        <li>
-
-          <a href="../profile.html" class="profile_icon">
-            <i class="fa-regular fa-user"></i>
-          </a>
-        </li>
-        <li>
-          <a href="../cart.html" class="cart_icon">
-            <i class="fa-solid fa-cart-shopping"></i>
-          </a>
-
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- Header End -->
-  <main class="cart_main">
-    <section class="Cart_container">
-      <div class="cart_header">
-        <h3 class="heading">Shopping Cart</h3>
-      </div>
-
+<<<<<<< HEAD
         <div class="cart_body">
            
             <table class="cart_table">
@@ -96,9 +42,9 @@
           </div>
       </section>
       <section class="cart_btn_links">
-        <a href="/product-listing.html">Continue Shopping</a>
+        <a href="/product-listing.html"><i class="fa-solid fa-arrow-left"></i>  Continue Shopping</a>
         <a href="#">Update Cart</a>  
-        <a href="/checkout.html">Checkout</a>  
+        <a href="/checkout.html">Checkout <i class="fa-solid fa-arrow-right"></i></a>  
       </section>
     </main>
     <footer>
@@ -154,3 +100,159 @@
     </footer>
   </body>
 </html>
+=======
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/cart.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <script src="https://kit.fontawesome.com/7f041928e2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Header Start -->
+  <nav class="navbar">
+    <div class="navbar-container nav-c">
+      <a href="./index.html" class="logo">β𝐀ᵏ𝑒ｍ𝑒</a>
+      <input type="checkbox" />
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <form class="search">
+        <input type="text" placeholder="Search BakeMe.com" />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      <ul class="menu-items">
+        <li><a href="/">Home</a></li>
+        <li><a href="Product-listing.html">Our products</a></li>
+        <li><a href="/about-us.html">About</a></li>
+        <li><a href="/contact-us.html">contact-us</a></li>
+        <li><a href="./login.html">Login</a></li>
+        <li><a href="./register.html">Register</a></li>
+        <li>
+
+          <a href="../profile.html" class="profile_icon">
+            <i class="fa-regular fa-user"></i>
+          </a>
+        </li>
+        <li>
+          <a href="../cart.html" class="cart_icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Header End -->
+  <main class="cart_main">
+    <section class="Cart_container">
+      <div class="cart_header">
+        <h3 class="heading">Shopping Cart</h3>
+      </div>
+
+      <div class="cart_body">
+
+        <table class="cart_table">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Quantity</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="images/cake/cake1.jpg" alt="cake image"></td>
+              <td>Desginer Chocolate cake</td>
+              <td class="qty_container">
+                <span>1</span>
+              </td>
+              <td>$25</td>
+            </tr>
+            <tr>
+              <td><img src="images/cake/cake1.jpg" alt="cake image"></td>
+              <td>Desginer Chocolate cake</td>
+              <td>
+                <span>1</span>
+              </td>
+              <td>$25</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Total</td>
+              <td class="total" colspan="1"><b>$50</b>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="cart_btn_links">
+      <a href="/product-listing.html">Continue Shopping</a>
+      <a href="#">Update Cart</a>
+      <a href="/checkout.html">Checkout</a>
+    </section>
+  </main>
+  <footer>
+    <section class="footer_1">
+      <a href="./index.html" class="logo">β𝐀ᵏ𝑒ｍ𝑒</a>
+      <article>
+        <h2>Connect with us</h2>
+        <div class="socials">
+          <i class="fa-brands fa-facebook facebook"></i>
+          <i class="fa-brands fa-instagram instagram"></i>
+          <i class="fa-brands fa-youtube youtube"></i>
+          <i class="fa-brands fa-twitter twitter"></i>
+        </div>
+      </article>
+    </section>
+    <section class="footer_2">
+      <article class="footer_links">
+        <ul>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="#">Become Franchise</a></li>
+          <li><a href="#">Become Vendor</a></li>
+        </ul>
+      </article>
+      <article class="footer_links">
+        <ul>
+          <li><a href="#">Cakes</a></li>
+          <li><a href="#">3D & SP cakes</a></li>
+          <li><a href="#">Pastries</a></li>
+          <li><a href="#">Chocolates</a></li>
+        </ul>
+      </article>
+      <article class="footer_links">
+        <ul>
+          <li><a href="#">Download E-brochure</a></li>
+          <li><a href="#">Recognition & Awards</a></li>
+          <li><a href="#">Cake Studies</a></li>
+          <li><a href="#">Our Factories</a></li>
+        </ul>
+      </article>
+      <article class="footer_links">
+        <ul>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & conditions</a></li>
+        </ul>
+      </article>
+    </section>
+    <section class="footer_3">
+      <span> Copyright © BakeMe. All rights reserved </span>
+      <span>Designed & Developed by <u>Crazy Designers</u> </span>
+    </section>
+  </footer>
+</body>
+
+</html>
+>>>>>>> 6086736aabb2205452a3b21a05673dc5c9bb526f
