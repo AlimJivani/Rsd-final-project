@@ -17,8 +17,7 @@
 </head>
 
 <body>
-
-    <!-- nav start -->
+    <!-- Header Start -->
     <nav class="navbar">
         <div class="navbar-container nav-c">
             <a href="./index.html" class="logo">β𝐀ᵏ𝑒ｍ𝑒</a>
@@ -28,17 +27,19 @@
                 <span class="line line2"></span>
                 <span class="line line3"></span>
             </div>
-            <div class="search">
-                <input type="search" placeholder="Search BakeMe.com">
+            <form class="search">
+                <input type="text" placeholder="Search BakeMe.com" />
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
+            </form>
             <ul class="menu-items">
                 <li><a href="/">Home</a></li>
                 <li><a href="Product-listing.html">Our products</a></li>
                 <li><a href="/about-us.html">About</a></li>
+                <li><a href="/contact-us.html">contact-us</a></li>
                 <li><a href="./login.html">Login</a></li>
                 <li><a href="./register.html">Register</a></li>
                 <li>
+
                     <a href="../profile.html" class="profile_icon">
                         <i class="fa-regular fa-user"></i>
                     </a>
@@ -47,32 +48,33 @@
                     <a href="../cart.html" class="cart_icon">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </a>
+
                 </li>
             </ul>
         </div>
     </nav>
-    <!-- nav end -->
+    <!-- Header End -->
 
     <!-- Register section start -->
     <main class="main">
         <section class="container">
-            <form>
+            <form class="input-form">
                 <h1>Register</h1>
 
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <input class="input-box" type="email" id="email" name="email" placeholder="Enter your email" required>
 
                 <label for="phone">Mobile number</label>
-                <input type="number" id="Mobile" name="Mobile" placeholder="Enter your Mobile Number" required>
+                <input class="input-box" type="number" id="Mobile" name="Mobile" placeholder="Enter your Mobile Number" required>
 
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <input class="input-box" type="text" id="name" name="name" placeholder="Enter your name" required>
 
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <input class="input-box" type="password" id="password" name="password" placeholder="Enter your password" required>
 
                 <label for="confirm_password">Confirm Password</label>
-                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password"
+                <input class="input-box" type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password"
                     required>
 
                 <input type="submit" value="Register" class="submit-button">

@@ -10,11 +10,14 @@
   <link rel="stylesheet" href="css/all.min.css" />
   <link rel="stylesheet" href="css/register.css">
   <script src="https://kit.fontawesome.com/7f041928e2.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+  <!-- Header Start -->
   <nav class="navbar">
-    <div class="navbar-container container">
+    <div class="navbar-container nav-c">
       <a href="./index.html" class="logo">β𝐀ᵏ𝑒ｍ𝑒</a>
       <input type="checkbox" />
       <div class="hamburger-lines">
@@ -22,14 +25,15 @@
         <span class="line line2"></span>
         <span class="line line3"></span>
       </div>
-      <div class="search">
-        <input type="search" placeholder="Search BakeMe.com">
+      <form class="search">
+        <input type="text" placeholder="Search BakeMe.com" />
         <button><i class="fa-solid fa-magnifying-glass"></i></button>
-      </div>
+      </form>
       <ul class="menu-items">
         <li><a href="/">Home</a></li>
         <li><a href="Product-listing.html">Our products</a></li>
         <li><a href="/about-us.html">About</a></li>
+        <li><a href="/contact-us.html">contact-us</a></li>
         <li><a href="./login.html">Login</a></li>
         <li><a href="./register.html">Register</a></li>
         <li>
@@ -45,23 +49,23 @@
 
         </li>
       </ul>
-
     </div>
   </nav>
+  <!-- Header End -->
 
   <main class="main">
     <section class="container">
-        <form action="./login.html">
-            <h1>Login</h1>
+      <form class="input-form" action="./login.html">
+        <h1>Login</h1>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <label for="email">Email</label>
+        <input class="input-box" type="email" id="email" name="email" placeholder="Enter your email" required>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <label for="password">Password</label>
+        <input class="input-box" type="password" id="password" name="password" placeholder="Enter your password" required>
 
-            <input type="submit" value="Login" class="submit-button">
-        </form>
+        <input type="submit" value="Login" class="submit-button">
+      </form>
     </section>
   </main>
   <footer>
