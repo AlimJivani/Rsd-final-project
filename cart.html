@@ -1,55 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/cart.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <script
-      src="https://kit.fontawesome.com/7f041928e2.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="navbar-container container">
-        <a href="./index.html" class="logo">β𝐀ᵏ𝑒ｍ𝑒</a>
-        <input type="checkbox" />
-        <div class="hamburger-lines">
-          <span class="line line1"></span>
-          <span class="line line2"></span>
-          <span class="line line3"></span>
-        </div>
-        <form>
-          <input type="text" placeholder="Search BakeMe.com" />
-          <button><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
-        <ul class="menu-items">
-          <li><a href="/">Home</a></li>
-          <li><a href="Product-listing.html">Our products</a></li>
-          <li><a href="/about-us.html">About</a></li>
-          <li><a href="./login.html">Login</a></li>
-          <li>
-            <a href="../profile.html" class="profile_icon">
-              <i class="fa-regular fa-user"></i>
-            </a>
-          </li>
-          <li>
-            <a href="../cart.html" class="cart_icon">
-              <i class="fa-solid fa-cart-shopping"></i>
-            </a>
-          </li>
-        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/cart.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <script src="https://kit.fontawesome.com/7f041928e2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Header Start -->
+  <nav class="navbar">
+    <div class="navbar-container nav-c">
+      <a href="./index.html" class="logo">β𝐀ᵏ𝑒ｍ𝑒</a>
+      <input type="checkbox" />
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
       </div>
-    </nav>
-    <main class="cart_main">
-      <section class="Cart_container">
-        <div class="cart_header">
-          <h3 class="heading">Shopping Cart</h3>
-        </div>
+      <form class="search">
+        <input type="text" placeholder="Search BakeMe.com" />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      <ul class="menu-items">
+        <li><a href="/">Home</a></li>
+        <li><a href="Product-listing.html">Our products</a></li>
+        <li><a href="/about-us.html">About</a></li>
+        <li><a href="/contact-us.html">contact-us</a></li>
+        <li><a href="./login.html">Login</a></li>
+        <li><a href="./register.html">Register</a></li>
+        <li>
+
+          <a href="../profile.html" class="profile_icon">
+            <i class="fa-regular fa-user"></i>
+          </a>
+        </li>
+        <li>
+          <a href="../cart.html" class="cart_icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Header End -->
+  <main class="cart_main">
+    <section class="Cart_container">
+      <div class="cart_header">
+        <h3 class="heading">Shopping Cart</h3>
+      </div>
 
         <div class="cart_body">
            
@@ -91,9 +96,9 @@
           </div>
       </section>
       <section class="cart_btn_links">
-        <a href="/product-listing.html"><i class="fa-solid fa-arrow-left"></i>  Continue Shopping</a>
+        <a href="/product-listing.html">Continue Shopping</a>
         <a href="#">Update Cart</a>  
-        <a href="/checkout.html">Checkout <i class="fa-solid fa-arrow-right"></i></a>  
+        <a href="/checkout.html">Checkout</a>  
       </section>
     </main>
     <footer>
