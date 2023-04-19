@@ -18,7 +18,7 @@
     background-color: #f2f2f2;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 20px 20px 60px #C9E4F7, -20px -20px 60px #bbd8f2;
+    box-shadow: 0 0 35px -16px rgba(0, 0, 0, 0.29);
 }
 
 h1 {
@@ -39,66 +39,54 @@ label {
     margin-bottom: 15px;
     border: none;
     border-radius: 5px;
-    width: 95%;
-    box-shadow: 20px 20px 60px #cedce5, 2px 5px 30px #92c7f6;
+    width: 100%;
+    box-shadow: 0 0 35px -16px rgba(0, 0, 0, 0.29);
 }
 
 .submit-button {
-    border-radius: 5px;
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-    padding: 5px;
-    font-size: 16px;
-    border: 1px solid #b74cc9;
-    margin-bottom: 10px;
-    background-color: #6c63ff;
     color: white;
+    background-color: #ec268f;
+    font-size: 14px;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    border: 2px solid #ec268f;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 .input-box:focus {
     outline: none;
     border: 3px solid;
-    border-image: linear-gradient(145deg, #9a40a9, #b74cc9) 1;
+    box-shadow: 0 0 35px -16px rgba(0, 0, 0, 0.29);
 
 }
 
 .submit-button:hover {
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-    animation-name: expand;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-@keyframes expand {
-    from {
-        width: 80%;
-    }
-
-    to {
-        width: 100%;
-    }
+    background-color: transparent;
+    color: #ec268f;
 }
 
 .login-with-third-party-apps {
     margin: 1em;
+    display: flex;
+    border: 2px solid #ec268f;
+    border-radius: 25px;
+    justify-content: space-between;
 }
 
 .login-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px 20px;
+    padding: 5px 10px;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
-    box-shadow: 20px 20px 60px #cedce5, 20px 20px 60px #92c7f6;
+    box-shadow: 0 0 35px -16px rgba(0, 0, 0, 0.29);
 
 }
 
@@ -116,7 +104,6 @@ label {
 
 .login-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .login-button i {
@@ -132,9 +119,27 @@ label {
     background-color: #2f477a;
 }
 
+.p-not-member{
+    text-align: center;
+}
+
 
 @media screen and (max-width: 768px) {
     .container {
-        max-width: 80%;
+        max-width: 100%;
+    }
+
+    .input-form{
+        max-width: 100%;
+    }
+
+    .input-form h1{
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .login-with-third-party-apps{
+        margin: 0.3em 0;
     }
 }

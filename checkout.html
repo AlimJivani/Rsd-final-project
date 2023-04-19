@@ -1,13 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout</title>
-    <link rel="stylesheet" href="css/checkout.css">
-</head>
-<body>
-    <h2>Checkout</h2>
-</body>
+    <link rel="stylesheet" href="css/checkout.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <script
+      src="https://kit.fontawesome.com/7f041928e2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container nav-c">
+        <a href="./index.html" class="logo">β𝐀ᵏ𝑒ｍ𝑒</a>
+        <input type="checkbox" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <form class="search">
+          <input type="text" placeholder="Search BakeMe.com" />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <ul class="menu-items">
+          <li><a href="/">Home</a></li>
+          <li><a href="Product-listing.html">Our products</a></li>
+          <li><a href="/about-us.html">About</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li>
+            <a href="../profile.html" class="profile_icon">
+              <i class="fa-regular fa-user"></i>
+            </a>
+          </li>
+          <li>
+            <a href="../cart.html" class="cart_icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="checkout_main">
+      <div class="checkout_container">
+        <div class="checkout_header">
+          <h2>Checkout</h2>
+          <h6>
+            Returning customer? <a href="/login.html"> Click here to login</a>
+          </h6>
+          <p>
+            If you have shopped with us before, please enter your details in the
+            boxes below. If you are a new customer please proceed to the Billing
+            & Shipping section.
+          </p>
+          <form class="checkout_signin">
+            <div>
+              <div>
+                <label for="email">Username or email *</label>
+                <input type="text" id="email" placeholder="Enter your email"/>
+              </div>
+              <div>
+                <label for="password">Password *</label>
+                <input type="text" id="password" placeholder="Enter your password" />
+              </div>
+            </div>
+            <input value="LOGIN" type="button"/>
+            <a href="">Forgot Password?</a>
+          </form>
+          <h6>
+            Have a coupon?<a href="/login.html">
+              Click here to enter your code</a
+            >
+          </h6>
+          <form class="checkout_coupon">
+            <input type="text" />
+            <button>APPLY COUPON</button>
+          </form>
+        </div>
+        <legend>Billing Details</legend>
+        <div class="checkout_body">
+          <article class="checkout_user_form">
+            <form class="checkout_form">
+              <div class="checkout_form_group">
+                <div >
+                <label for="country">Country *</label>
+                <input type="text" id="country" placeholder="Enter your country"/>
+            </div>
+              </div>
+              <div class="checkout_form_group">
+                <div >
+                  <label for="fname">First Name *</label>
+                  <input type="text" id="fname" placeholder="Enter your first name"/>
+                </div>
+                <div>
+                  <label for="lname">Last Name *</label>
+                  <input type="text" id="lname" placeholder="Enter your last name"/>
+                </div>
+              </div>
+              <div class="checkout_form_group">
+                <div>
+
+                    <label for="address">Address *</label>
+                    <input type="text" id="address" placeholder="Enter your address"/>
+                </div>
+              </div>
+              <div class="checkout_form_group">
+                <div>
+                  <label for="province">Province *</label>
+                  <input type="text" id="province" placeholder="Enter your province"/>
+                </div>
+                <div class="checkout_form_group">
+                    <div>
+
+                        <label for="city">Town / City *</label>
+                        <input type="text" id="city" placeholder="Enter your city"/>
+                    </div>
+                </div>
+              </div>
+
+              <div class="checkout_form_group">
+                <div>
+                    <label for="Postalcode">Postalcode *</label>
+                    <input type="text" id="Postalcode" placeholder="Enter your postalcode"/>
+                </div>
+              </div>
+              <div class="checkout_form_group">
+                <div>
+                  <label for="Email">Email *</label>
+                  <input type="text" id="Email" placeholder="Enter your email"/>
+                </div>
+                <div>
+                  <label for="Phone">Phone *</label>
+                  <input type="text" id="Phone" placeholder="Enter your phone number"/>
+                </div>
+              </div>
+            </form>
+        </article>
+            <div class="checkout_payment">
+              <h3>Your order</h3>
+              <ul>
+                <li>
+                  <h3>Product</h3>
+                  <h3>Total</h3>
+                </li>
+                <li>
+                  <h3>Desginer Chocolate Cake x 2</h3>
+                </li>
+                <li>
+                  <h3>Cart subtotal</h3>
+                  <h3>$50</h3>
+                </li>
+                <li>
+                  <h3>Shipping and Handling</h3>
+                  <span> Free Shipping </span>
+                </li>
+                <li>
+                  <h3>Order total</h3>
+                  <h3>$50</h3>
+                </li>
+                <li><h3>Payment method</h3> </li>
+                <li class="payment_class">
+                    <div>
+                        <input type="radio" name="payment">
+                        <span>Cash</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="payment">
+                        <span>Credit / Debit Card</span>
+                    </div>
+
+                </li>
+                <li>
+                    <button>PLACE ORDER</button>
+                </li>
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <section class="footer_1">
+        <a href="./index.html" class="logo">β𝐀ᵏ𝑒ｍ𝑒</a>
+        <article>
+          <h2>Connect with us</h2>
+          <div class="socials">
+            <i class="fa-brands fa-facebook facebook"></i>
+            <i class="fa-brands fa-instagram instagram"></i>
+            <i class="fa-brands fa-youtube youtube"></i>
+            <i class="fa-brands fa-twitter twitter"></i>
+          </div>
+        </article>
+      </section>
+      <section class="footer_2">
+        <article class="footer_links">
+          <ul>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="#">Become Franchise</a></li>
+            <li><a href="#">Become Vendor</a></li>
+          </ul>
+        </article>
+        <article class="footer_links">
+          <ul>
+            <li><a href="#">Cakes</a></li>
+            <li><a href="#">3D & SP cakes</a></li>
+            <li><a href="#">Pastries</a></li>
+            <li><a href="#">Chocolates</a></li>
+          </ul>
+        </article>
+        <article class="footer_links">
+          <ul>
+            <li><a href="#">Download E-brochure</a></li>
+            <li><a href="#">Recognition & Awards</a></li>
+            <li><a href="#">Cake Studies</a></li>
+            <li><a href="#">Our Factories</a></li>
+          </ul>
+        </article>
+        <article class="footer_links">
+          <ul>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & conditions</a></li>
+          </ul>
+        </article>
+      </section>
+      <section class="footer_3">
+        <span> Copyright © BakeMe. All rights reserved </span>
+        <span>Designed & Developed by <u>Crazy Designers</u> </span>
+      </section>
+    </footer>
+  </body>
 </html>

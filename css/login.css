@@ -108,6 +108,10 @@ form > h3 {
     grid-area: centerRight;
 }
 
+.login > form > h3 {
+    padding: 20px;
+}
+
 .login > form {
     width: 400px;
     margin: 0 3rem;
@@ -198,6 +202,10 @@ form > h3 {
     margin-top: .5rem;
 }
 
+.auth-main {
+    padding: 20px 0;
+}
+
 @media (max-width: 768px) {
     .wrapper {
         display: grid;
@@ -216,5 +224,14 @@ form > h3 {
 @media (max-width: 425px) {
     .login {
         margin-top: 51%;
+    }
+    footer {
+        margin-top: 50%;
+    }
+}
+
+@media (max-width: 320px) {
+    .login {
+        margin-top: 91%;
     }
 }
