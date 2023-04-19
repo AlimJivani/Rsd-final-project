@@ -15,7 +15,7 @@
   </head>
   <body>
     <nav class="navbar">
-      <div class="navbar-container container">
+      <div class="navbar-container nav-c">
         <a href="./index.html" class="logo">β𝐀ᵏ𝑒ｍ𝑒</a>
         <input type="checkbox" />
         <div class="hamburger-lines">
@@ -23,7 +23,7 @@
           <span class="line line2"></span>
           <span class="line line3"></span>
         </div>
-        <form>
+        <form class="search">
           <input type="text" placeholder="Search BakeMe.com" />
           <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
@@ -58,18 +58,18 @@
             boxes below. If you are a new customer please proceed to the Billing
             & Shipping section.
           </p>
-          <form>
+          <form class="checkout_signin">
             <div>
               <div>
                 <label for="email">Username or email *</label>
-                <input type="text" id="email" />
+                <input type="text" id="email" placeholder="Enter your email"/>
               </div>
               <div>
                 <label for="password">Password *</label>
-                <input type="text" id="password" />
+                <input type="text" id="password" placeholder="Enter your password" />
               </div>
             </div>
-            <button>LOGIN</button>
+            <input value="LOGIN" type="button"/>
             <a href="">Forgot Password?</a>
           </form>
           <h6>
@@ -77,7 +77,7 @@
               Click here to enter your code</a
             >
           </h6>
-          <form>
+          <form class="checkout_coupon">
             <input type="text" />
             <button>APPLY COUPON</button>
           </form>
@@ -85,51 +85,62 @@
         <legend>Billing Details</legend>
         <div class="checkout_body">
           <article class="checkout_user_form">
-            <form>
+            <form class="checkout_form">
               <div class="checkout_form_group">
+                <div >
                 <label for="country">Country *</label>
                 <input type="text" id="country" />
+            </div>
               </div>
               <div class="checkout_form_group">
-                <div>
+                <div >
                   <label for="fname">First Name *</label>
-                  <input type="text" id="fname" />
+                  <input type="text" id="fname" placeholder="Enter your first name"/>
                 </div>
                 <div>
                   <label for="lname">Last Name *</label>
-                  <input type="text" id="lname" />
+                  <input type="text" id="lname" placeholder="Enter your last name"/>
                 </div>
               </div>
               <div class="checkout_form_group">
-                <label for="address">Address *</label>
-                <input type="text" id="address" />
+                <div>
+
+                    <label for="address">Address *</label>
+                    <input type="text" id="address" placeholder="Enter your address"/>
+                </div>
               </div>
               <div class="checkout_form_group">
                 <div>
                   <label for="province">Province *</label>
-                  <input type="text" id="province" />
+                  <input type="text" id="province" placeholder="Enter your province"/>
                 </div>
-                <div>
-                  <label for="city">Town / City *</label>
-                  <input type="text" id="city" />
+                <div class="checkout_form_group">
+                    <div>
+
+                        <label for="city">Town / City *</label>
+                        <input type="text" id="city" placeholder="Enter your city"/>
+                    </div>
                 </div>
               </div>
 
               <div class="checkout_form_group">
-                <label for="Postalcode">Postalcode *</label>
-                <input type="text" id="Postalcode" />
+                <div>
+                    <label for="Postalcode">Postalcode *</label>
+                    <input type="text" id="Postalcode" placeholder="Enter your postalcode"/>
+                </div>
               </div>
               <div class="checkout_form_group">
                 <div>
                   <label for="Email">Email *</label>
-                  <input type="text" id="Email" />
+                  <input type="text" id="Email" placeholder="Enter your email"/>
                 </div>
                 <div>
                   <label for="Phone">Phone *</label>
-                  <input type="text" id="Phone" />
+                  <input type="text" id="Phone" placeholder="Enter your phone number"/>
                 </div>
               </div>
             </form>
+        </article>
             <div class="checkout_payment">
               <h3>Your order</h3>
               <ul>
@@ -150,9 +161,10 @@
                 </li>
                 <li>
                   <h3>Order total</h3>
+                  <h3>$50</h3>
                 </li>
                 <li><h3>Payment method</h3> </li>
-                <li>
+                <li class="payment_class">
                     <div>
                         <input type="radio" name="payment">
                         <span>Cash</span>
@@ -164,11 +176,11 @@
 
                 </li>
                 <li>
-                    <button>Place order></button>
+                    <button>PLACE ORDER</button>
                 </li>
               </ul>
             </div>
-          </article>
+          
         </div>
       </div>
     </main>

@@ -29,3 +29,208 @@
 .checkout_header p {
   font-size: 13px;
 }
+.checkout_signin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+.checkout_signin > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+.checkout_signin > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.checkout_signin > div > div > label {
+  font-size: 14px;
+  color: #333;
+}
+.checkout_signin > div > div > input {
+  width: 400px;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  outline: none;
+}
+.checkout_signin > input {
+  width: max-content;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: lightgreen;
+  letter-spacing: 2px;
+
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border: 1px solid green;
+}
+.checkout_signin > input:hover {
+  background-color: rgb(75, 211, 75);
+  color: white;
+}
+.checkout_signin > a {
+  color: red;
+  font-size: 14px;
+}
+.checkout_coupon {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.checkout_coupon > input {
+  width: 250px;
+  padding: 7px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  outline: none;
+}
+.checkout_coupon > button {
+  padding: 7px;
+  width: max-content;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: lightgreen;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border: 2px solid lightgreen;
+}
+.checkout_coupon > button:hover {
+  background-color: rgb(75, 211, 75);
+  color: white;
+}
+legend {
+  margin: 50px 0 20px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+.checkout_body {
+  display: flex;
+  width: 100%;
+  background-color: #f5f5f5;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.checkout_user_form {
+  width: 60%;
+  padding: 10px;
+  background-color: white;
+}
+.checkout_form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  gap: 20px;
+}
+.checkout_form_group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+  gap: 20px;
+}
+.checkout_form_group > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.checkout_form_group > div > label {
+  color: #333;
+  font-size: 14px;
+}
+.checkout_form_group > div > input {
+  width: 300px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  outline: none;
+}
+.checkout_form_group > div > input:focus {
+  background-color: #f5f5f5;
+}
+.checkout_payment {
+  width: 40%;
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.checkout_payment ul {
+  display: flex;
+  flex-direction: column;
+}
+.checkout_payment ul li {
+  border-bottom: 1px solid lightgrey;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.checkout_payment ul li > div {
+  display: flex;
+  gap: 10px;
+}
+.checkout_payment ul li h3 {
+  font-size: 16px;
+}
+.checkout_payment ul .payment_class {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.checkout_payment ul li button {
+  margin: 10px 0;
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid #d6544e;
+  background-color: #d6544e;
+  color: white;
+  letter-spacing: 1px;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+  cursor: pointer;
+}
+.checkout_payment ul li button:hover {
+  color: #d6544e;
+  background-color: transparent;
+}
+@media screen and (max-width: 768px) {
+    .checkout_header h6{
+        width: 100%;
+    }
+    .checkout_signin>div>div>input{
+        width: 300px;
+    }
+  .checkout_body {
+    gap: 20px;
+  }
+  .checkout_user_form {
+    width: 100%;
+  }
+
+  .checkout_signin > div {
+    flex-wrap: wrap;
+  }
+  .checkout_form_group > div > input {
+    width: 350px;
+  }
+  .checkout_payment {
+    width: 100%;
+  }
+  .checkout_coupon > input{
+    width: 200px;
+  }
+  .checkout_coupon > button{
+    font-size: 14px;
+    letter-spacing: 0px;
+  }
+}
